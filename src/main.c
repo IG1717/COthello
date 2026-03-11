@@ -1,8 +1,11 @@
 #include "raylib.h"
+#include "board.h"
+#include <stdio.h>
 
 int main(void)
 {
     InitWindow(800, 450, "raylib [core] example - basic window");
+    setup_board();
 
     while (!WindowShouldClose())
     {
