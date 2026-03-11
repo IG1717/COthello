@@ -1,0 +1,6 @@
+**/*.o
+*.o
+game
+.DS_Store
+raylib/src/libraylib.a
+raylib/src/*.o
