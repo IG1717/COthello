@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "raylib.h"
 
+int playerTurn = 0;
+
 void setup_board_logic(void) {
     for(int row=0; row<8; row++) {
         for(int col=0; col<8; col++) {
@@ -34,6 +36,13 @@ void handle_mouse_click(void) {
         Vector2 mousePosition = GetMousePosition();
         int row = mousePosition.x/100;
         int col = mousePosition.y/100;
-        board[row][col] = B;
+
+        if(playerTurn == 0) {
+            board[row][col] = W;
+            playerTurn =1 ;
+        } else {
+            board[row][col] = B;
+            playerTurn = 0;
+        }
      }
 }

@@ -5,6 +5,7 @@ typedef enum square_status {
     B
 } square_status;
 
+
 // 2-D Array which holds the entire board
 square_status board[8][8];
 
@@ -16,3 +17,7 @@ void setup_board_graphics();
 
 // Method to handle mouse click
 void handle_mouse_click();
+
+// 0 represents white, 1 represents black 
+// TODO - delete if not used
+extern int playerTurn;

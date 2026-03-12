@@ -15,9 +15,9 @@ int main(void) {
 
   while (!WindowShouldClose()) {
     BeginDrawing();
+      handle_mouse_click();
       ClearBackground(RAYWHITE);
       setup_board_graphics();
-      handle_mouse_click();
     EndDrawing();
   }
 
