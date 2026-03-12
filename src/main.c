@@ -1,21 +1,26 @@
-#include "raylib.h"
 #include "board.h"
+#include "raylib.h"
 #include <stdio.h>
 
-int main(void)
-{
-    InitWindow(800, 450, "raylib [core] example - basic window");
-    setup_board();
+int main(void) {
+  // Initiliazing
+  const int screenWidth = 800;
+  const int screenHeight = 800;
 
-    while (!WindowShouldClose())
-    {
-        BeginDrawing();
-            ClearBackground(RAYWHITE);
-            DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
-        EndDrawing();
-    }
+  InitWindow(screenHeight, screenHeight, "Othello");
 
-    CloseWindow();
+  float rotation = 0.0f;
+  SetTargetFPS(60);
 
-    return 0;
+
+  while (!WindowShouldClose()) {
+    BeginDrawing();
+    ClearBackground(RAYWHITE);
+    setup_board_graphics();
+    EndDrawing();
+  }
+
+  CloseWindow();
+
+  return 0;
 }
