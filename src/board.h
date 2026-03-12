@@ -13,3 +13,6 @@ void setup_board_logic();
 
 // Function that sets up the board graphically
 void setup_board_graphics();
+
+// Method to handle mouse click
+void handle_mouse_click();
