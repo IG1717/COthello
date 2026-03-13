@@ -1,5 +1,7 @@
 #include <stdint.h>
 
+#define SQUARE_SIZE 100
+
 uint64_t black_squares;
 uint64_t white_squares;
 
