@@ -1,13 +1,7 @@
-// Enum that repesents the state of every square - E(EMPTY), W(WHITE), B(BLACK)
-typedef enum square_status {
-    E,
-    W, 
-    B
-} square_status;
+#include <stdint.h>
 
-
-// 2-D Array which holds the entire board
-square_status board[8][8];
+uint64_t black_squares;
+uint64_t white_squares;
 
 // Function that sets up the board logically
 void setup_board_logic();

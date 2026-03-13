@@ -12,6 +12,7 @@ int main(void) {
   float rotation = 0.0f;
   SetTargetFPS(60);
   setup_board_logic();
+  
 
   while (!WindowShouldClose()) {
     BeginDrawing();
